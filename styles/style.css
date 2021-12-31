@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: antiquewhite;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Megrim", cursive;
+  text-align: center;
+}
+.header__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  font-size: 4.5em;
+  font-weight: 900;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.header__text {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  text-align: right;
+}
+.header__text--top {
+  margin: 0 0 -15px 0;
+  font-size: 3em;
+  letter-spacing: 0.4em;
+}
+.header__text--bottom {
+  margin: 0 15px 0 0;
+  letter-spacing: 0.2em;
+  font-size: 1.9em;
+}
+.header .nav__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1em;
+  font-weight: 600;
+}
+.header .nav__list .nav__listItem {
+  padding: 5px 20px;
+}
+
+.footer {
+  margin: 60px 0 0 0;
+  font-family: "Megrim", cursive;
+  text-align: center;
+}
+.footer__heading {
+  font-size: 1.3em;
+  letter-spacing: 0.5em;
+}
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.8em;
+}
+.footer__nav .nav__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__nav .nav__listItem {
+  padding: 0 10px;
+}
+.footer__contactDetails {
+  font-size: 0.6em;
+  letter-spacing: 0.3em;
+}
+.footer__webTech {
+  font-size: 2em;
+}
+.footer__webTech--logo {
+  padding: 5px;
+}
+
+@media screen and (min-width: 769px) {
+  .header__logo {
+    font-size: 6em;
+  }
+  .header__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-right: 5%;
+  }
+  .header__text--top {
+    font-size: 3.3em;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__link {
+    width: 100%;
+  }
+  .header__logo {
+    font-size: 6.9em;
+  }
+  .header__text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .header__text--top {
+    font-size: 4.4em;
+  }
+  .header__text--bottom {
+    font-size: 2.9em;
+  }
+  .header__nav {
+    margin-right: 5%;
+  }
+  .header .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1.3em;
+  }
+
+  .footer__nav {
+    margin: 20px 0;
+  }
+  .footer__webTech {
+    margin: 20px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
