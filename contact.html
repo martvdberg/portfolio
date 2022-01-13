@@ -4,57 +4,133 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/308a51df50.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="./scripts/script.js"></script>
-    <title>Mart van den Berg - Contact</title>
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="./styles/contact/contact.css"
+      type="text/css"
+    />
+    <title>Mart van den Berg</title>
   </head>
+
   <body>
-    <header>
-      <a href="./index.html">
-        <h1>Mart van den Berg</h1>
+    <header class="header">
+      <a href="./index.html" class="header__link">
+        <span class="header__logo">(M)</span>
+        <div class="header__text">
+          <h1 class="header__text--top">Mart</h1>
+          <h1 class="header__text--bottom">van den Berg</h1>
+        </div>
       </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__listItem">
+            <a href="./projecten.html" class="nav__link">Projecten</a>
+          </li>
+          <li class="nav__listItem">
+            <a href="./cv.html" class="nav__link">cv</a>
+          </li>
+          <li class="nav__listItem nav__listItem--active">
+            <a href="./contact.html" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <ul>
-        <li>
-          <a href="./projecten.html">Projecten</a>
-        </li>
-        <li>
-          <a href="./cv.html">CV</a>
-        </li>
-        <li>
-          <a href="./contact.html">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <h2>Contact</h2>
-      <p>
-        maiores distinctio, expedita, sit reprehenderit vero magni blanditiis
-        tempore consectetur consequatur at doloribus! Doloremque ullam veritatis
-        temporibus aperiam qui laborum. Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Deleniti, adipisci a placeat explicabo asperiores
-        repellendus earum ipsam eveniet reprehenderit labore aspernatur
-        accusantium alias quod iste consectetur nulla veniam nemo quae!
-      </p>
+
+    <main class="main">
+      <section class="contact">
+        <section class="contact__social">
+          <h2>//Social</h2>
+          <!-- <p>Ik ben te vinden op:</p> -->
+          <ul class="nav__list nav__list--social">
+            <li class="nav__listItem nav__listItem--social">
+              <a href="" class="nav__link nav__link--social nav__link--linkedin"
+                ><i class="fab fa-linkedin"></i>LinkedIn</a
+              >
+            </li>
+            <li class="nav__listItem nav__listItem--social">
+              <a href="" class="nav__link nav__link--social nav__link--github"
+                ><i class="fab fa-github"></i>Github</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="contact__direct">
+          <h2>//Mail</h2>
+          <p>Laat hieronder een bericht achter of stuur een mailtje</p>
+        </section>
+
+        <form class="contact__form">
+          <label class="contact__form--item" for="name">Naam: </label>
+          <input class="contact__form--item" type="text" name="name" />
+          <label class="contact__form--item" for="email">email: </label>
+          <input class="contact__form--item" type="email" name="email" />
+          <label class="contact__form--item" for="message">Bericht: </label>
+          <textarea
+            class="contact__form--item"
+            name="message"
+            rows="15"
+          ></textarea>
+          <button class="contact__form--item contact__form--button">
+            submit
+          </button>
+        </form>
+      </section>
     </main>
-    <footer>
-      <h1>Mart van den Berg</h1>
-      <ul>
-        <li>
-          <a href="./projecten.html">Projecten</a>
-        </li>
-        <li>
-          <a href="./cv.html">CV</a>
-        </li>
-        <li>
-          <a href="./contact.html">Contact</a>
-        </li>
-      </ul>
-      <ul>
-        <li>LinkedIn</li>
-        <li>Github</li>
-      </ul>
+    <footer class="footer">
+      <h1 class="footer__heading">Mart van den Berg</h1>
+      <nav class="footer__nav nav">
+        <ul class="nav__list nav__list--footer">
+          <li class="nav__listItem">
+            <a href="./projecten.html" class="nav__link">Projecten</a>
+          </li>
+          <li class="nav__listItem">
+            <a href="./cv.html" class="nav__link">cv</a>
+          </li>
+          <li class="nav__listItem">
+            <a href="./contact.html" class="nav__link">Contact</a>
+          </li>
+        </ul>
+        <ul class="nav__list nav__list--social">
+          <li class="nav__listItem nav__listItem--social">
+            <a href="" class="nav__link nav__link--social nav__link--linkedin"
+              >LinkedIn <i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="nav__listItem nav__listItem--social">
+            <a href="" class="nav__link nav__link--social nav__link--github"
+              >Github <i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <section class="footer__contactDetails">
+        <p>
+          ( <a href="mailto:martvdberg@gmail.com">martvdberg@gmail.com</a> )
+        </p>
+      </section>
+      <section class="footer__webTech">
+        <span class="footer__webTech--logo footer__webTech--html"
+          ><i class="fab fa-html5"></i
+        ></span>
+        <span class="footer__webTech--logo footer__webTech--css"
+          ><i class="fab fa-css3-alt"></i
+        ></span>
+        <span class="footer__webTech--logo footer__webTech--js"
+          ><i class="fab fa-js-square"></i
+        ></span>
+        <span class="footer__webTech--logo footer__webTech--React"
+          ><i class="fab fa-react"></i
+        ></span>
+        <span class="footer__webTech--logo footer__webTech--git"
+          ><i class="fab fa-git-alt"></i
+        ></span>
+      </section>
     </footer>
   </body>
 </html>

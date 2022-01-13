@@ -4,58 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/308a51df50.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./scripts/apiClient.js"></script>
+    <script defer src="./scripts/projects.js"></script>
     <script defer src="./scripts/script.js"></script>
-    <title>Mart van den Berg - Projecten</title>
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/projects/projects.css" />
+    <title>Mart van den Berg</title>
   </head>
+
   <body>
-    <header>
-      <a href="./index.html">
-        <h1>Mart van den Berg</h1>
+    <header class="header">
+      <a href="./index.html" class="header__link">
+        <span class="header__logo">(M)</span>
+        <div class="header__text">
+          <h1 class="header__text--top">Mart</h1>
+          <h1 class="header__text--bottom">van den Berg</h1>
+        </div>
       </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__listItem nav__listItem--active">
+            <a href="./projecten.html" class="nav__link">Projecten</a>
+          </li>
+          <li class="nav__listItem">
+            <a href="./cv.html" class="nav__link">cv</a>
+          </li>
+          <li class="nav__listItem">
+            <a href="./contact.html" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <ul>
-        <li>
-          <a href="./projecten.html">Projecten</a>
-        </li>
-        <li>
-          <a href="./cv.html">CV</a>
-        </li>
-        <li>
-          <a href="./contact.html">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <h2>Projecten</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed inventore
-        maiores distinctio, expedita, sit reprehenderit vero magni blanditiis
-        tempore consectetur consequatur at doloribus! Doloremque ullam veritatis
-        temporibus aperiam qui laborum. Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Deleniti, adipisci a placeat explicabo asperiores
-        repellendus earum ipsam eveniet reprehenderit labore aspernatur
-        accusantium alias quod iste consectetur nulla veniam nemo quae!
-      </p>
+
+    <main class="main">
+      <section class="projects">
+        <section class="projects__routing">
+          <h3 class="projects__routing--winc">Winc projects</h3>
+          <h3 class="projects__routing--personal">Personal projects</h3>
+        </section>
+
+        <section class="projects__winc hide" id="wincProjects">
+          <h2>//Winc Academy</h2>
+        </section>
+
+        <section class="projects__other hide" id="otherProjects">
+          <h2>//Personal</h2>
+        </section>
+      </section>
     </main>
-    <footer>
-      <h1>Mart van den Berg</h1>
-      <ul>
-        <li>
-          <a href="./projecten.html">Projecten</a>
-        </li>
-        <li>
-          <a href="./cv.html">CV</a>
-        </li>
-        <li>
-          <a href="./contact.html">Contact</a>
-        </li>
-      </ul>
-      <ul>
-        <li>LinkedIn</li>
-        <li>Github</li>
-      </ul>
+
+    <footer class="footer">
+      <h1 class="footer__heading">Mart van den Berg</h1>
+      <nav class="footer__nav nav">
+        <ul class="nav__list nav__list--footer">
+          <li class="nav__listItem">
+            <a href="./projecten.html" class="nav__link">Projecten</a>
+          </li>
+          <li class="nav__listItem">
+            <a href="./cv.html" class="nav__link">cv</a>
+          </li>
+          <li class="nav__listItem">
+            <a href="./contact.html" class="nav__link">Contact</a>
+          </li>
+        </ul>
+        <ul class="nav__list nav__list--social">
+          <li class="nav__listItem nav__listItem--social">
+            <a href="" class="nav__link nav__link--social nav__link--linkedin"
+              >LinkedIn <i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="nav__listItem nav__listItem--social">
+            <a href="" class="nav__link nav__link--social nav__link--github"
+              >Github <i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <section class="footer__contactDetails">
+        <p>
+          ( <a href="mailto:martvdberg@gmail.com">martvdberg@gmail.com</a> )
+        </p>
+      </section>
+      <section class="footer__webTech">
+        <span class="footer__webTech--logo footer__webTech--html"
+          ><i class="fab fa-html5"></i
+        ></span>
+        <span class="footer__webTech--logo footer__webTech--css"
+          ><i class="fab fa-css3-alt"></i
+        ></span>
+        <span class="footer__webTech--logo footer__webTech--js"
+          ><i class="fab fa-js-square"></i
+        ></span>
+        <span class="footer__webTech--logo footer__webTech--React"
+          ><i class="fab fa-react"></i
+        ></span>
+        <span class="footer__webTech--logo footer__webTech--git"
+          ><i class="fab fa-git-alt"></i
+        ></span>
+      </section>
     </footer>
   </body>
 </html>

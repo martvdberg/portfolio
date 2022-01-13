@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/308a51df50.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
     <title>Mart van den Berg</title>
   </head>
+
   <body>
     <header class="header">
       <a href="./index.html" class="header__link">
-        <span class="header__logo">M</span>
-        <h1 class="header__text">Mart van den Berg</h1>
+        <span class="header__logo">(M)</span>
+        <div class="header__text">
+          <h1 class="header__text--top">Mart</h1>
+          <h1 class="header__text--bottom">van den Berg</h1>
+        </div>
       </a>
       <nav class="header__nav nav">
         <ul class="nav__list">
@@ -20,7 +28,7 @@
             <a href="./projecten.html" class="nav__link">Projecten</a>
           </li>
           <li class="nav__listItem">
-            <a href="./cv.html" class="nav__link">CV</a>
+            <a href="./cv.html" class="nav__link">cv</a>
           </li>
           <li class="nav__listItem">
             <a href="./contact.html" class="nav__link">Contact</a>
@@ -28,15 +36,16 @@
         </ul>
       </nav>
     </header>
-    <main>
+
+    <main class="main">
       <p class="main__text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed inventore
-        maiores distinctio, expedita, sit reprehenderit vero magni blanditiis
-        tempore consectetur consequatur at doloribus! Doloremque ullam veritatis
-        temporibus aperiam qui laborum. Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Deleniti, adipisci a placeat explicabo asperiores
-        repellendus earum ipsam eveniet reprehenderit labore aspernatur
-        accusantium alias quod iste consectetur nulla veniam nemo quae!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quas
+        praesentium rem sunt fugit asperiores, deleniti temporibus magnam nemo
+        eum similique ducimus, minima animi eligendi illo ut earum iste a! Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Adipisci sit modi
+        corporis consectetur nesciunt nemo, saepe consequuntur dicta ab ad
+        inventore eius expedita, praesentium minima similique ut magnam magni
+        aut?
       </p>
     </main>
     <footer class="footer">
@@ -47,7 +56,7 @@
             <a href="./projecten.html" class="nav__link">Projecten</a>
           </li>
           <li class="nav__listItem">
-            <a href="./cv.html" class="nav__link">CV</a>
+            <a href="./cv.html" class="nav__link">cv</a>
           </li>
           <li class="nav__listItem">
             <a href="./contact.html" class="nav__link">Contact</a>
@@ -56,24 +65,37 @@
         <ul class="nav__list nav__list--social">
           <li class="nav__listItem nav__listItem--social">
             <a href="" class="nav__link nav__link--social nav__link--linkedin"
-              >LinkedIn</a
-            >
+              >LinkedIn <i class="fab fa-linkedin"></i
+            ></a>
           </li>
           <li class="nav__listItem nav__listItem--social">
             <a href="" class="nav__link nav__link--social nav__link--github"
-              >Github</a
-            >
+              >Github <i class="fab fa-github"></i
+            ></a>
           </li>
         </ul>
       </nav>
+      <section class="footer__contactDetails">
+        <p>
+          ( <a href="mailto:martvdberg@gmail.com">martvdberg@gmail.com</a> )
+        </p>
+      </section>
       <section class="footer__webTech">
-        <span class="footer__webTech--logo footer__webTech--html">HTML 5</span>
-        <span class="footer__webTech--logo footer__webTech--css">CSS 3</span>
+        <span class="footer__webTech--logo footer__webTech--html"
+          ><i class="fab fa-html5"></i
+        ></span>
+        <span class="footer__webTech--logo footer__webTech--css"
+          ><i class="fab fa-css3-alt"></i
+        ></span>
         <span class="footer__webTech--logo footer__webTech--js"
-          >JavaScript</span
-        >
-        <span class="footer__webTech--logo footer__webTech--React">React</span>
-        <span class="footer__webTech--logo footer__webTech--git">Git</span>
+          ><i class="fab fa-js-square"></i
+        ></span>
+        <span class="footer__webTech--logo footer__webTech--React"
+          ><i class="fab fa-react"></i
+        ></span>
+        <span class="footer__webTech--logo footer__webTech--git"
+          ><i class="fab fa-git-alt"></i
+        ></span>
       </section>
     </footer>
   </body>

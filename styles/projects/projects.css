@@ -1,0 +1,69 @@
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.projects__routing h3 {
+  margin: 0.5em;
+}
+
+.projectCard {
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px 0;
+  margin: 0 0 50px 0;
+}
+.projectCard__title {
+  grid-column: span 2;
+  margin: 0;
+}
+.projectCard__description {
+  font-size: 0.8em;
+  grid-column: span 2;
+  margin: 0;
+}
+.projectCard__link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid white;
+  border-radius: 0.3em;
+  padding: 5px 10px;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .projects {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects__routing {
+    display: none;
+  }
+  .projects__winc {
+    margin-right: 2em;
+  }
+  .projects__other {
+    margin-left: 2em;
+  }
+
+  .hide {
+    display: initial;
+  }
+}/*# sourceMappingURL=projects.css.map */

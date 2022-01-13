@@ -1,0 +1,61 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__routing {
+    & h3 {
+      margin: 0.5em;
+    }
+  }
+}
+
+.projectCard {
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px 0;
+  margin: 0 0 50px 0;
+
+  &__title {
+    grid-column: span 2;
+    margin: 0;
+  }
+  &__description {
+    font-size: 0.8em;
+    grid-column: span 2;
+    margin: 0;
+  }
+  &__link {
+    width: fit-content;
+    border: 1px solid white;
+    border-radius: 0.3em;
+    padding: 5px 10px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .projects {
+    flex-direction: row;
+    justify-content: center;
+
+    &__routing {
+      display: none;
+    }
+
+    &__winc {
+      margin-right: 2em;
+    }
+    &__other {
+      margin-left: 2em;
+    }
+  }
+
+  .hide {
+    display: initial;
+  }
+}
