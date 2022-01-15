@@ -2,12 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  // &__routing {
-  //   & h3 {
-  //     margin: 0.5em;
-  //   }
-  // }
 }
 
 .projectCard {
@@ -46,10 +40,6 @@
     display: grid;
     grid-template-areas: "W P" "Wp Pp";
 
-    // &__routing {
-    //   display: none;
-
-    // }
     &__routing {
       &--winc {
         grid-area: W;
@@ -60,11 +50,9 @@
     }
 
     &__winc {
-      // margin-right: 2em;
       grid-area: Wp;
     }
     &__other {
-      // margin-left: 2em;
       grid-area: Pp;
     }
   }
@@ -85,6 +73,7 @@
     &__overview {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      height: fit-content;
     }
   }
 }

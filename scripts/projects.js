@@ -1,6 +1,5 @@
 const fetchRepos = async () => {
   const jsonData = await getRepos();
-  console.log(jsonData);
   buildHtmlElements(jsonData);
 };
 
