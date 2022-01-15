@@ -18,8 +18,10 @@ const buildHtmlElements = (data) => {
     description.classList.add("projectCard__description");
     codeLink.classList.add("projectCard__link");
     codeLink.setAttribute("href", element.html_url);
+    codeLink.setAttribute("target", "_blank");
     webLink.classList.add("projectCard__link");
     webLink.setAttribute("href", element.homepage);
+    webLink.setAttribute("target", "_blank");
 
     // add data to html elements
     if (element.name.startsWith("Winc")) {

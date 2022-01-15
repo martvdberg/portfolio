@@ -18,12 +18,22 @@ a {
 .nav {
   &__list {
     display: flex;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  &__listItem--active {
-    text-decoration: underline;
+  &__listItem {
+    width: max-content;
+
+    &--active {
+      &::before {
+        content: "{";
+      }
+      &::after {
+        content: "}";
+      }
+    }
   }
 }
 

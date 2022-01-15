@@ -1,10 +1,7 @@
 .cv {
   display: grid;
-  grid-template-areas: "PP" "SK" "PR" "PH" "ED" "EX";
+  grid-template-areas: "ED" "EX" "PH" "SK" "IN";
   gap: 20px;
-}
-.cv__profile {
-  grid-area: PP;
 }
 .cv__education {
   grid-area: ED;
@@ -15,8 +12,8 @@
 .cv__skills {
   grid-area: SK;
 }
-.cv__properties {
-  grid-area: PR;
+.cv__interests {
+  grid-area: IN;
 }
 .cv__photo {
   grid-area: PH;
@@ -65,7 +62,10 @@
 
 @media screen and (min-width: 769px) {
   .cv {
-    grid-template-areas: "PP PP" "SK PR" ". PH" "ED ED" "EX EX";
+    grid-template-areas: "ED ED" "SK PH" "EX EX" "IN .";
+  }
+  .cv__photo {
+    width: 35vw;
   }
 
   .infoBlock {
@@ -82,8 +82,13 @@
 }
 @media screen and (min-width: 1025px) {
   .cv {
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "PH PP" "SK PR" "ED EX";
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "PH ED" "EX EX" "SK IN";
+  }
+  .cv__photo {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .cv__photo img {
     margin: 30px 0 0 0;

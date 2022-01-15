@@ -52,4 +52,4 @@ const createInfoList = (target, targetArray) => {
 createInfoBlock("education", education);
 createInfoBlock("experience", experience);
 createInfoList("skills", skills);
-createInfoList("properties", properties);
+createInfoList("interests", interests);

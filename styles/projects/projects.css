@@ -10,12 +10,12 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.projects__routing h3 {
-  margin: 0.5em;
-}
 
 .projectCard {
   max-width: 300px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10px 0;
@@ -24,6 +24,9 @@
 .projectCard__title {
   grid-column: span 2;
   margin: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .projectCard__description {
   font-size: 0.8em;
@@ -34,6 +37,9 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   border: 1px solid white;
   border-radius: 0.3em;
   padding: 5px 10px;
@@ -45,25 +51,36 @@
 
 @media screen and (min-width: 769px) {
   .projects {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: grid;
+    grid-template-areas: "W P" "Wp Pp";
   }
-  .projects__routing {
-    display: none;
+  .projects__routing--winc {
+    grid-area: W;
+  }
+  .projects__routing--personal {
+    grid-area: P;
   }
   .projects__winc {
-    margin-right: 2em;
+    grid-area: Wp;
   }
   .projects__other {
-    margin-left: 2em;
+    grid-area: Pp;
   }
 
   .hide {
     display: initial;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .projects {
+    grid-template-columns: 44vw 44vw;
+    justify-items: center;
+  }
+  .projects__routing {
+    justify-self: stretch;
+  }
+  .projects__overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }/*# sourceMappingURL=projects.css.map */

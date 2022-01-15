@@ -25,7 +25,7 @@ const experience = [
     location: "Diverse locaties",
     period: "heden - 2017",
     extraInfo:
-      " Verkopen en verhuren van fietsen aan klanten en onderhoud en reperaties aan alle soorten fietsen.",
+      "Naast het repareren, verkopen en verhuren van fietsen bestaan mijn werkzaamheden vooral uit het adviseren van klanten en contact onderhouden met de klanten via telefoon of mail. Ook doe ik klein onderhoud aan de website zoals bijvoorbeeld het vormgeven van een bestelformulier met HTML en CSS en het creëren van een datumkiezer in JavaScript. Daarnaast werk ik mee aan de inrichting van een nieuw software pakket voor de verhuur van fietsen. Hiernaast heb ik voor een tablet in de winkel, die in de rustige periodes niet veel wordt gebruikt, een webpagina gemaakt met CSS animaties zodat er toch nog iets gebeurd op het scherm.",
   },
   {
     title: "Account executive",
@@ -50,20 +50,10 @@ const experience = [
   },
 ];
 
-const skills = [
-  "Nederlands",
-  "Engels",
-  "HTML",
-  "CSS",
-  "Javascript",
-  "React",
-  "Git",
-];
+const skills = ["HTML", "CSS", "Javascript", "React", "Git"];
 
-const properties = [
-  "Klant gericht",
-  "Doorzettingsvermogen",
-  "Rustig",
-  "Empatisch",
-  "Leergierig",
+const interests = [
+  "Kinderliedjes spelen op de basgitaar voor het beste publiek ooit.",
+  "Wegdromen bij scheurende gitaren of een mooi akoestisch stuk.",
+  "Muziek theater bezoeken, fijne muziek met een goed verhaal.",
 ];

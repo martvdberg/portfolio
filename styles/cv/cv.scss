@@ -1,11 +1,12 @@
 .cv {
   display: grid;
-  grid-template-areas: "PP" "SK" "PR" "PH" "ED" "EX";
+  grid-template-areas: "ED" "EX" "PH" "SK" "IN";
+  // "SK" "IN" "PH" "ED" "EX";
   gap: 20px;
 
-  &__profile {
-    grid-area: PP;
-  }
+  // &__INofile {
+  //   grid-area: PP;
+  // }
   &__education {
     grid-area: ED;
   }
@@ -15,8 +16,8 @@
   &__skills {
     grid-area: SK;
   }
-  &__properties {
-    grid-area: PR;
+  &__interests {
+    grid-area: IN;
   }
   &__photo {
     grid-area: PH;
@@ -71,7 +72,11 @@
 // Media queries
 @media screen and (min-width: 769px) {
   .cv {
-    grid-template-areas: "PP PP" "SK PR" ". PH" "ED ED" "EX EX";
+    grid-template-areas: "ED ED" "SK PH" "EX EX" "IN .";
+    // "SK IN" ". PH" "ED ED" "EX EX";
+    &__photo {
+      width: 35vw;
+    }
   }
   .infoBlock {
     border: none;
@@ -89,10 +94,12 @@
 
 @media screen and (min-width: 1025px) {
   .cv {
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "PH PP" "SK PR" "ED EX";
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "PH ED" "EX EX" "SK IN";
+    // "PH ." "SK IN" "ED EX";
     // gap: 50px;
     &__photo {
+      width: fit-content;
       & img {
         margin: 30px 0 0 0;
       }

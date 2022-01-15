@@ -3,15 +3,16 @@
   flex-direction: column;
   justify-content: center;
 
-  &__routing {
-    & h3 {
-      margin: 0.5em;
-    }
-  }
+  // &__routing {
+  //   & h3 {
+  //     margin: 0.5em;
+  //   }
+  // }
 }
 
 .projectCard {
   max-width: 300px;
+  height: fit-content;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10px 0;
@@ -20,6 +21,7 @@
   &__title {
     grid-column: span 2;
     margin: 0;
+    height: fit-content;
   }
   &__description {
     font-size: 0.8em;
@@ -28,6 +30,7 @@
   }
   &__link {
     width: fit-content;
+    height: fit-content;
     border: 1px solid white;
     border-radius: 0.3em;
     padding: 5px 10px;
@@ -40,22 +43,48 @@
 
 @media screen and (min-width: 769px) {
   .projects {
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-areas: "W P" "Wp Pp";
 
+    // &__routing {
+    //   display: none;
+
+    // }
     &__routing {
-      display: none;
+      &--winc {
+        grid-area: W;
+      }
+      &--personal {
+        grid-area: P;
+      }
     }
 
     &__winc {
-      margin-right: 2em;
+      // margin-right: 2em;
+      grid-area: Wp;
     }
     &__other {
-      margin-left: 2em;
+      // margin-left: 2em;
+      grid-area: Pp;
     }
   }
 
   .hide {
     display: initial;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .projects {
+    grid-template-columns: 44vw 44vw;
+    justify-items: center;
+
+    &__routing {
+      justify-self: stretch;
+    }
+    &__overview {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
