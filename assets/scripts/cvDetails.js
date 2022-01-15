@@ -50,10 +50,10 @@ const experience = [
   },
 ];
 
-const skills = ["HTML", "CSS", "Javascript", "React", "Git"];
+const skills = ["HTML", "CSS", "Sass", "Javascript", "React", "Git"];
 
 const interests = [
-  "Kinderliedjes spelen op de basgitaar voor het beste publiek ooit.",
-  "Wegdromen bij scheurende gitaren of een mooi akoestisch stuk.",
-  "Muziek theater bezoeken, fijne muziek met een goed verhaal.",
+  "Kinderliedjes spelen op de basgitaar voor het beste publiek ooit",
+  "Wegdromen bij scheurende gitaren of een mooi akoestisch stuk",
+  "Muziek theater bezoeken, fijne muziek met een goed verhaal",
 ];
