@@ -12,3 +12,7 @@ document
     document.querySelector(".projects__other").classList.toggle("hide");
     document.querySelector(".projects__winc").classList.add("hide");
   });
+
+document.querySelector(".main").onscroll = () => {
+  console.log("scroll");
+};
