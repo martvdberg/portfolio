@@ -64,12 +64,9 @@
     grid-template-columns: 1fr 2fr;
 
     &__social {
-      // width: 100%;
-      // text-align: center;
       grid-row: span 2;
       & .nav__list {
         margin: 0;
-        // align-items: center;
       }
     }
 
