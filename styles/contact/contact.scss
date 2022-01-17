@@ -25,6 +25,10 @@
     max-width: 600px;
     margin: 40px auto 0 auto;
     text-align: right;
+
+    &--input {
+      background-color: white;
+    }
     &--button {
       grid-column-start: 2;
       width: fit-content;

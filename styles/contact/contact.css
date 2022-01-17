@@ -24,6 +24,9 @@
   margin: 40px auto 0 auto;
   text-align: right;
 }
+.contact__form--input {
+  background-color: white;
+}
 .contact__form--button {
   grid-column-start: 2;
   width: -webkit-fit-content;
