@@ -16,3 +16,5 @@ document
 document.querySelector(".main").onscroll = () => {
   console.log("scroll");
 };
+
+console.log("i need to display scroll when the document scrolls");
