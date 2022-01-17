@@ -6,6 +6,7 @@
   &__social {
     & .nav__list {
       flex-direction: column;
+      align-items: flex-start;
       margin-left: 20%;
     }
     & .nav__listItem {
@@ -29,6 +30,7 @@
     &--input {
       background-color: white;
     }
+
     &--button {
       grid-column-start: 2;
       width: fit-content;
@@ -62,12 +64,12 @@
     grid-template-columns: 1fr 2fr;
 
     &__social {
-      width: 100%;
-      text-align: center;
+      // width: 100%;
+      // text-align: center;
       grid-row: span 2;
       & .nav__list {
         margin: 0;
-        align-items: center;
+        // align-items: center;
       }
     }
 
