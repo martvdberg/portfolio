@@ -1,6 +1,5 @@
 const fetchRepos = async () => {
   const jsonData = await getRepos();
-  console.log(jsonData);
   buildHtmlElements(jsonData);
 };
 
@@ -25,7 +24,7 @@ const buildHtmlElements = (data) => {
 
     // add data to html elements
     if (element.name.startsWith("Winc")) {
-      title.innerText = element.name.slice(13).replace("_", " ");
+      title.innerText = element.name.slice(16).replace("_", " ");
     } else {
       title.innerText = element.name.replace("_", " ");
     }
