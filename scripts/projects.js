@@ -1,5 +1,6 @@
 const fetchRepos = async () => {
   const jsonData = await getRepos();
+  console.log(jsonData);
   buildHtmlElements(jsonData);
 };
 
@@ -38,7 +39,7 @@ const buildHtmlElements = (data) => {
     projectCard.appendChild(codeLink);
 
     // only add the websitelink if there is an active website
-    if (element.homepage !== null) {
+    if (element.homepage !== "") {
       projectCard.appendChild(webLink);
     }
 
